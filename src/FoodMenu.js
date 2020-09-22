@@ -1,16 +1,16 @@
 import React from 'react'
 import Food from './Food'
-import './FoodMenu.css'
+import './Foodmenu.css'
 
-function FoodMenu() {
+function Foodmenu({selected}) {
+    var fooditems=selected.foods;
     return (
         <div className="food-container">
-            <Food/>
-            <Food/>
-            <Food/>
-            <Food/>
+            {
+                fooditems.map((fooditem)=>(<Food name={fooditem.name} src={fooditem.src} price={fooditem.price}/>))
+            }
         </div>
     )
 }
 
-export default FoodMenu
+export default Foodmenu

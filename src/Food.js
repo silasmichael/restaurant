@@ -1,19 +1,19 @@
 import React from 'react'
 import './Food.css'
-import foodimage from './image/food/chorizo-mozarella-gnocchi-bake-cropped.jpg'
+// import foodimage from './image/food/chorizo-mozarella-gnocchi-bake-cropped.jpg'
 import { Link } from 'react-router-dom'
 
-function Food() {
+function Food({src,name,price}) {
     return (
         <div className="food-item">
             <Link>
-                <img className='food-img' src={foodimage} alt='food'/>
+                <img className='food-img' src={src} alt='food'/>
             </Link>
             <div className="food-detail">
                 <Link  className='link1'>
-                    <span id='title'>Nyama Choma</span>
+                    <span id='title'>{name}</span>
                 </Link>
-                <span id='price'>Tsh 20000/=</span>
+                <span id='price'>{price}</span>
             </div>
         </div>
     )

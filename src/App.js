@@ -11,6 +11,7 @@ import About from './About';
 import Menu from './Menu';
 import Contact from './Contact';
 import Signin from './Signin';
+import GoogleMapComponent from './GoogleMapComponent';
 function App() {
   return (
     <div className="App">
@@ -26,7 +27,7 @@ function App() {
           <Route path="/management" component = {Management} />
           <Route path="/about" component = {About} />
           <Route path="/contact" component = {Contact} exact />
-          <Route path="/menu" component = {Menu} exact />
+          <Route path="/map" component = {GoogleMapComponent} exact />
           <Route path="/admin" component = {Signin} exact />
         </Switch>
       </Router>

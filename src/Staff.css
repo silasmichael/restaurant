@@ -1,0 +1,42 @@
+.staffs{
+    display: flex;
+    background-color: #fee2b3;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.staff-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.staff{
+    max-width: 400px;
+    margin: 25px;
+}
+.staff-img{
+    max-height: 300px;
+    max-width: 350px;
+    border-radius: 20px;
+}
+#name{
+    font-size: 20px;
+    color: #ff5200;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#position{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#description{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    margin:0;
+    font-style:italic ;
+}

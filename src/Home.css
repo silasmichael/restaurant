@@ -1,9 +1,10 @@
 .home{
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .home-welcome{
     display: flex;
@@ -26,7 +27,7 @@
     margin: 10px;
     height: fit-content;
 }
-.home-welcome-msg{
+.home-welcome-msg,.table-msg{
     height: fit-content;
     max-width: 70%;
     font-size: 18px;
@@ -55,6 +56,7 @@
     width: 1000px;
     padding-top: 100px;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .home-social>span{
     padding-right: 200px;
@@ -70,7 +72,6 @@
 .menu-section{
     display: flex;
     background-color: #fee2b3;
-    padding: 50px;
     margin-top: 20px;
     width: 100%;
     align-items: center;
@@ -82,7 +83,11 @@
     display: flex;
     justify-content: center;
     color: #000000 !important;
+    margin-top: 100px;
     width: 100%;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .home-menu-category{
     display: flex;
@@ -101,7 +106,7 @@
     padding-left: 120px;
     width: 720px;
 }
-.subtitle{
+#table-span,.subtitle{
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.5);
     font-size: 12px;
@@ -109,7 +114,7 @@
     letter-spacing: .1rem;
 
 }
-.home-menu-category-h3{
+#table-h3,.home-menu-category-h3{
     font-size: 35px;
     margin: 0px;
     padding: 0px;
@@ -133,7 +138,7 @@ ul{
     width: 25px;
     margin-right: 20px;
 }
-.link{
+.divlink{
     text-decoration: none;
     color: #000000;
     font-size: 20px;
@@ -151,13 +156,19 @@ li{
     display: flex;
     align-items: center;
 }
-.link:focus{
+.divlink:focus{
     background-color: white;
     color: #ff5200;
     box-shadow: 0 15px 30px 0 #ebca92;
 }
 .home-dessert{
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 201, 126, 0.9);
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .home-dessert-title{
     margin-bottom: 25px;
@@ -166,12 +177,14 @@ li{
 .home-dessert-container{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .home-dessert-container-item{
     display: flex;
     padding: 20px;
     margin: 10px;
+    height: 100px;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: all .2s ease-in-out;
@@ -189,9 +202,21 @@ li{
     text-align: left;
 }
 span{
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 h3{
     margin: 0;
     color: #000;
+}
+.home-table{
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 201, 126, 0.9);
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.table-msg{
+    text-align: center;
 }

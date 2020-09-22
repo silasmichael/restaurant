@@ -6,7 +6,12 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import FoodMenu from './FoodMenu';
+import HomeMenu from './HomeMenu';
+import Footer from './Footer';
+import Staff from './Staff';
+import About from './About';
+
+
 
 function Home() {
     return (
@@ -38,46 +43,9 @@ function Home() {
                     </div>
                 </div>
                 <div className="menu-section">
-                    <div className="home-menu">
-                        <div className="home-memu-category">
-                            <span className="subtitle">Select Your Meal 🍗</span>
-                            <h3 className="home-menu-category-h3">Popular  
-                            <strong className="home-menu-category-h3-strong"> Foods</strong></h3>
-                            <ul>
-                                <li>
-                                    <Link className="link">
-                                        <img className="food-icon" src="https://untree.co/demos/meal/images/1x/noodles.png" alt="Breakfast"/>
-                                        <span>Breakfast</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="link">
-                                        <img className="food-icon" src="https://untree.co/demos/meal/images/1x/chicken.png" alt="Lunch"/>
-                                        <span>Lunch </span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="link">
-                                        <img className="food-icon" src="https://untree.co/demos/meal/images/1x/hotdog.png" alt="Dinner"/>
-                                        <span>Dinner</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link className="link">
-                                        <img className="food-icon" src="https://untree.co/demos/meal/images/1x/drinks.png" alt="Drinks"/>
-                                        <span>Drinks</span>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="home-memu-category-food">
-                            <div className="home-memu-category-food-header">
-                                <h2><span id="caterogy">Breakfast</span></h2>
-                                <p><span id="number">1</span>/4</p>
-                            </div>
-                            <FoodMenu/>
-                        </div>
+                    <HomeMenu/>
                     </div>
+                    
                     <div className="home-dessert">
                         <div className="home-dessert-title">
                             <span className="subtitle">Choose Dessert 🍨</span>
@@ -116,8 +84,18 @@ function Home() {
                         </div>
 
                     </div>
-
+                <Staff/>
+                <div className="home-table">
+                    <span id="table-span">BOOK A TABLE </span>
+                    <h3 id="table-h3">Book A Table Now</h3>
+                    <p class="table-msg">Please let us serve you in your Occasion 🎊. Book now!! Table for Birthday 🎂, Meeting 🤝🏼, Engagement 💍 , or 
+                        Date 💏. We will do hard work for you and make it perfect and memorable </p>
+                        <Link to="/table">
+                            <button className="home-explore-button">Book Now</button>
+                        </Link>
                 </div>
+                <About/>
+                <Footer/>
                 
 
             </div>
