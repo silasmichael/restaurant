@@ -12,6 +12,8 @@ import Menu from './Menu';
 import Contact from './Contact';
 import Signin from './Signin';
 import GoogleMapComponent from './GoogleMapComponent';
+import AboutPage from './AboutPage';
+import MenuPage from './MenuPage';
 function App() {
   return (
     <div className="App">
@@ -25,8 +27,9 @@ function App() {
           <Route path="/customercare" component = {CustomerCare} />
           <Route path="/kitchen" component = {Kitchen} />
           <Route path="/management" component = {Management} />
-          <Route path="/about" component = {About} />
-          <Route path="/contact" component = {Contact} exact />
+          <Route path="/about" component = {AboutPage} />
+          <Route path="/menu" component = {MenuPage} />
+          <Route path="/contact" component = {AboutPage} />
           <Route path="/map" component = {GoogleMapComponent} exact />
           <Route path="/admin" component = {Signin} exact />
         </Switch>
