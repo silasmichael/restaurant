@@ -4,6 +4,7 @@
     padding-bottom: 50px;
     background-color: #fee2b3;
     width: 100%;
+    flex-wrap: wrap;
 }
 .about-info{
     padding-left: 20px;

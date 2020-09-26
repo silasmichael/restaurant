@@ -1,12 +1,6 @@
 import React, { useRef } from 'react'
-import InstagramIcon from '@material-ui/icons/Instagram';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import PhoneIcon from '@material-ui/icons/Phone';
 import './About.css'
 import GoogleMapComponent from './GoogleMapComponent';
-import { Link } from 'react-router-dom';
 
 function About() {
     return (
